@@ -1,0 +1,16 @@
+p:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .paragraph {
+    font-family: "Arial", sans-serif;
+    column-count: 3; /* Chia đoạn văn thành 3 cột */
+    column-rule: 1px solid blue; /* Đường viền giữa các cột */
+    -webkit-column-count: 3; /* Tương tự cho trình duyệt WebKit (Safari, Chrome) */
+    -webkit-column-rule: 1px solid blue; /* Tương tự cho trình duyệt WebKit (Safari, Chrome) */
+  }

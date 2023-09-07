@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dangkythanhvien.css">
+</head>
+<body>
+<div class="container">
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <table cellpadding="4" border="1" cellspacing="0" width="500">
+      <caption class="font-style">ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</caption>
+      <tr>
+        <td class="font-style">Họ tên:</td>
+        <td class="input-container"><input class="mytextbox" type="text" id="txtHoTen" name="name" required style="width: 350px;"></td>
+      </tr>
+      <tr>
+        <td class="font-style">Tên đăng nhập:</td>
+        <td class="input-container"><input class="mytextbox" type="text" id="txtUserName" name="username" required style="width: 350px;"></td>
+      </tr>
+      <tr>
+        <td class="font-style">Mật khẩu:</td>
+        <td class="input-container"><input class="mytextbox" type="password" id="txtPass" name="password" required style="width: 350px;"></td>
+      </tr>
+      <tr>
+        <td class="font-style">Gõ lại mật khẩu:</td>
+        <td class="input-container"><input class="mytextbox" type="password" id="txtRepass" name="confirm-password" required style="width: 350px;"></td>
+      </tr>
+      <tr>
+        <td class="font-style">Phái:</td>
+        <td class="input-container">
+          <input type="radio" id="rdNam" name="gender" value="0"><label for="rdNam">Nam</label>
+          <input type="radio" id="rdNu" name="gender" value="1"><label for="rdNu">Nữ</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="font-style">Ngoại ngữ:</td>
+        <td class="input-container">
+          <div class="checkbox-container">
+            <input type="checkbox" id="chkEnglish" name="language" value="English">
+            <label for="chkEnglish">Tiếng Anh</label>
+            <input type="checkbox" id="chkFrench" name="language" value="French">
+            <label for="chkFrench">Tiếng Pháp</label>
+            <input type="checkbox" id="chkHoa" name="language" value="Hoa">
+            <label for="chkHoa">Tiếng Hoa</label>
+            <input type="checkbox" id="chkOther" name="language" value="Other">
+            <label for="chkOther">Khác</label>
+          </div>
+          <input class="text-input" type="text" id="txtLanguage" name="language-other" placeholder="Mời nhập..." style="width: 350px;">
+        </td>
+      </tr>
+      <tr>
+        <td class="font-style">Nghề nghiệp:</td>
+        <td class="input-container">
+          <select class="mytextbox" id="cboNgheNghiep" name="occupation" required>
+            <option value="0">Bạn làm nghề gì</option>
+            <option value="1">Học sinh - Sinh viên</option>
+            <option value="2">Giáo viên</option>
+            <option value="3">Nhân viên</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="font-style">Hình:</td>
+        <td class="input-container">
+          <div class="file-input">
+            <input class="mytextbox" type="text" id="txtHinh" name="image" readonly style="width: 250px;">
+            <button type="button" id="btnBrowse">Browse...</button>
+            <input type="file" id="fHinh" name="image" accept="image/*" required style="display: none;">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="font-style">Sở thích:</td>
+        <td class="input-container"><textarea class="mytextbox" id="txtSoThich" name="interest" rows="3" style="width: 350px;"></textarea></td>
+      </tr>
+      <tr>
+        <td class="font-style">Độ tuổi trung bình:</td>
+        <td class="input-container">
+          <input class="mytextbox" type="number" id="txtDoTuoi" name="average-age" min="18" max="45" value="20" required style="width: 350px;">
+        </td>
+      </tr>
+      <tr>
+        <td class="font-style">Thành phố:</td>
+        <td class="input-container">
+          <div class="datalist-container">
+            <input class="mytextbox" type="text" id="txtThanhPho" name="city" required style="width: 350px;">
+            <datalist class="bgrcity" id="dlThanhPho">
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+              <option value="Phan Thiết">Phan Thiết</option>
+              <option value="Đà Nẵng">Đà Nẵng</option>
+              <option value="Huế">Huế</option>
+              <option value="Vũng Tàu">Vũng Tàu</option>
+              <option value="Cà Mau">Cà Mau</option>
+              <option value="Bạc Liêu">Bạc Liêu</option>
+            </datalist>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" id="btnDangKy" class="submit-btn" value="Đăng ký">
+          <input type="reset" id="btnXoa" class="submit-btn" value="Làm lại">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+<script src="dangkythanhvien.js"></script>
+</html>

@@ -1,0 +1,148 @@
+body {
+  background-color: #f9d4e8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+td, th {
+  padding: 4px;
+  border: 1px solid #000;
+}
+
+caption {
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+  width: auto;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"],
+.input-container select,
+.input-container textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* CSS3 properties */
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input-container .file-name {
+  margin-top: 5px;
+}
+
+.file-input {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.file-input input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-input button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-name {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Additional CSS3 styles */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.datalist-container input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* CSS3 properties */
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.datalist-container input:focus + datalist {
+  display: block;
+}
+
+.datalist-container datalist {
+  display: none;
+}
+.mytextbox
+{
+  color: #99FF33; 
+  background-color: #006699;
+  border: 1px solid #996633;
+  width: 300px;
+}
+.bgrcity
+{
+  width: 100px;
+  background-color: #006699;
+  color: #99FF33; 
+  background-color: #006699;
+  border: 1px solid #996633;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  margin-right: 10px;
+}
+
+.text-input {
+  display: none;
+  margin-top: 5px;
+  background-color: white;
+}
+.font-style
+{
+  color: #006699;
+  font-weight: bold;
+}

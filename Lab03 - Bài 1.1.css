@@ -1,0 +1,12 @@
+p:first-letter
+  {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+    font-family: "Arial", sans-serif;
+  }
+  .paragraph {
+    font-family: "Arial", sans-serif;
+  }
